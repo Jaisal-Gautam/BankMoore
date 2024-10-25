@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Moore|DashBoard</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- NavBar -->
+    <header class="nav">
+        <div class="nav-items">
+            <div class="Page-Name"> 
+                <span id="Name">DashBoard</span>
+            </div>
+            <div class="Icons">
+                <ul>
+                    <li> <input type="text" placeholder="Search..." id="SearchBar"></li>
+                    <li> <i class="fa-solid fa-bell" id="Bell"></i> </li>
+                    <li>
+                        <img src="/avatar.png" alt="">
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- SideBar -->
+    <section class="sidebar">
+        <div class="items">
+            <div class="Logo_Text">
+                <span id="Logo">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                </span>
+                <div id="txt">
+                    B a n k <span>Moore</span>
+                </div>
+            </div>
+
+            <div class="menu-items">
+                <div class="item">
+                    <ul>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-house"></i>
+                                <span id="item_txt">DashBoard</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                <span id="item_txt">Transaction</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-user"></i>
+                                <span id="item_txt">Accounts</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-money-bill"></i>
+                                <span id="item_txt">Investments</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span id="item_txt">Credit Card</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-sack-dollar"></i>
+                                <span id="item_txt">Loans</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-wrench"></i>
+                                <span id="item_txt">Services</span>
+                            </a>
+                        </li>
+                        <li class="links">
+                            <a href="">
+                                <i class="fa-solid fa-gear"></i>
+                                <span id="item_txt">Settings</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Body -->
+    <main class="main">
+        <div class="cards" id="C1"><span>
+            My Cards
+        </span></div>
+        
+        </div>
+        <div class="cards" id="C3">
+            <span>Transactions</span>
+        </div>
+        <div class="cards" id="C4">
+
+            <div class="cnt1">
+                <ul class="bk-name">
+                <li>BankMoore</li>
+            </ul> 
+            <ul class="chip">
+                <li>
+                    <img src="/chip.png" alt="">
+                </li>
+            </ul>
+            <ul class="bnk-no">
+                <li>1234</li>
+                <li>5678</li>
+                <li>9012</li>
+                <li>3456</li>
+            </ul>
+            <ul class="name-exp">
+                <li class="name">Jaisal</li>
+                <li class="exp">24/7</li>
+            </ul>
+        
+            </div>
+        </div>
+        <div class="cards" id="C5">
+
+            <div class="cnt2">
+                <ul class="bk-name">
+                <li>HDFC</li>
+            </ul> 
+            <ul class="chip">
+                <li>
+                    <img src="/chip.png" alt="">
+                </li>
+            </ul>
+            <ul class="bnk-no">
+                <li>1234</li>
+                <li>5678</li>
+                <li>9012</li>
+                <li>3456</li>
+            </ul>
+            <ul class="name-exp">
+                <li class="name">Jaisal</li>
+                <li class="exp">24/7</li>
+            </ul>
+        
+            </div>
+        </div>
+        <div class="cards" id="C6">
+            <div class="card">
+                <ul>
+                    <li>
+                        <ul class="row1">
+                            <li class="noti-Logo" id="dc1"><i class='bx bx-dollar-circle'></i></li>
+                            <li><ul class="date">
+                                <li class="dc">Deposited 100$</li>
+                                <li>13th Sept</li>
+                            </ul></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="row2">
+                            <li class="noti-Logo" id="dc2"><i class='bx bx-dollar-circle'></i></li>
+                            <li><ul class="date">
+                                <li class="dc">Credited 20$</li>
+                                <li> 12th Sept</li>
+                            </ul></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="row3">
+                            <li class="noti-Logo" id="dc3"><i class='bx bx-dollar-circle'></i></li>
+                            <li><ul class="date">
+                                <li class="dc">Check Deposited</li>
+                                <li>5th Sept</li>
+                            </ul></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cards" id="C7">
+            <span>Weekly Report</span>
+            
+        </div>
+        <div class="cards" id="C8"> 
+            <span>Expense Statistics</span>
+        </div>
+        <div class="cards" id="C9">
+            <span>Stocks Held </span>
+        </div>
+        <div class="cards" id="C10">
+            <div class="chart-1">
+                <canvas id="bar_chart" height="300px" width="800px" ></canvas>
+            </div>
+        </div>
+        <div class="cards" id="C11">
+            <div class="chart-2">
+                <canvas id="polar_chart" height="295px" width="250px" ></canvas>
+            </div>
+        </div>
+        <div class="cards" id="C12">
+
+            <div class="stk-card">
+                <ul class="r1">
+                    <li class="stk-Logo">
+                        <img src="/nvidia.png" alt="">
+                    </li>
+                    <li>
+                        <ul class="stk-name">
+                            <li>Nvidia</li>
+                            <li>NVDA</li>
+                        </ul>
+                    </li>
+                    <li>100$</li>
+                </ul>
+                <ul class="r2">
+                    <li class="stk-Logo">
+                        <img src="/Tesla.webp" alt="">
+                    </li>
+                    <li>
+                        <ul class="stk-name">
+                            <li>Tesla</li>
+                            <li>TSLA</li>
+                        </ul>
+                    </li>
+                    <li>200$</li>
+                </ul>
+                <ul class="r3">
+                    <li class="stk-Logo">
+                        <img src="/btc.webp" alt="">
+                    </li>
+                    <li>
+                        <ul class="stk-name">
+                            <li>Bitcoin</li>
+                            <li>BTC</li>
+                        </ul>
+                    </li>
+                    <li>67500$</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cards" id="C13">
+            <span>Stock Price</span>
+        </div>
+        <div class="cards" id="C14">
+            <div class="chart-3">
+                <canvas id="line_chart" height="280" width="800px" ></canvas>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.5/dist/chart.umd.min.js"></script>
+    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+
+</body>
+</html>
